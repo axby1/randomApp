@@ -74,5 +74,5 @@ jobs:
       # 8️⃣ Verify build (optional sanity check)
       - name: Test docker compose build
         run: |
-          docker compose -f docker compose.yml config
+          docker compose -f docker-compose.yml config
           echo "✅ Compose configuration validated successfully"
