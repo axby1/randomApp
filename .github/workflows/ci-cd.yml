@@ -72,7 +72,7 @@ jobs:
           cache-to: type=registry,ref=${{ secrets.DOCKERHUB_USERNAME }}/myapp-frontend:cache,mode=max
 
       # 8️⃣ Verify build (optional sanity check)
-      - name: Test docker-compose build
+      - name: Test docker compose build
         run: |
-          docker-compose -f docker-compose.yml config
+          docker compose -f docker compose.yml config
           echo "✅ Compose configuration validated successfully"
